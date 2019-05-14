@@ -1,0 +1,98 @@
+﻿@model LordMyCastle.Models.StatsDuo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>StatsDuo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NomFormation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomFormation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AttaqueTypeTroupe1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AttaqueTypeTroupe1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DefenseTypeTroupe1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DefenseTypeTroupe1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PvMaxTypeTroupe1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PvMaxTypeTroupe1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AttaqueTypeTroupe2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AttaqueTypeTroupe2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DefenseTypeTroupe2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DefenseTypeTroupe2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PvMaxTypeTroupe2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PvMaxTypeTroupe2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AttaqueArmee)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AttaqueArmee)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DefenseArmee)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DefenseArmee)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PvMaxArmee)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PvMaxArmee)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

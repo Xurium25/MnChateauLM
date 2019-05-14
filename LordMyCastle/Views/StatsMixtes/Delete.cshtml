@@ -1,0 +1,120 @@
+﻿@model LordMyCastle.Models.StatsMixte
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>StatsMixte</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AttaqueInf)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AttaqueInf)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DefenseInf)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DefenseInf)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PvMaxInf)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PvMaxInf)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AttaqueArcher)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AttaqueArcher)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DefenseArcher)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DefenseArcher)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PvMaxArcher)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PvMaxArcher)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AttaqueCava)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AttaqueCava)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DefenseCava)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DefenseCava)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PvMaxCava)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PvMaxCava)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AttaqueArmee)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AttaqueArmee)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DefenseArmee)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DefenseArmee)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PvMaxArmee)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PvMaxArmee)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

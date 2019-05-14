@@ -1,0 +1,80 @@
+﻿@model LordMyCastle.Models.StatsMono
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>StatsMono</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NomFormation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomFormation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AttaqueFormation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AttaqueFormation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DefenseFormation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DefenseFormation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PvMaxFormation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PvMaxFormation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AttaqueArmee)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AttaqueArmee)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DefenseArmee)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DefenseArmee)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PvMaxArmee)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PvMaxArmee)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

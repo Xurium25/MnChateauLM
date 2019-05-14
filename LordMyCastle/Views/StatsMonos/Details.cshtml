@@ -1,0 +1,74 @@
+﻿@model LordMyCastle.Models.StatsMono
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>StatsMono</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NomFormation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomFormation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AttaqueFormation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AttaqueFormation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DefenseFormation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DefenseFormation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PvMaxFormation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PvMaxFormation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AttaqueArmee)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AttaqueArmee)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DefenseArmee)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DefenseArmee)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PvMaxArmee)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PvMaxArmee)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

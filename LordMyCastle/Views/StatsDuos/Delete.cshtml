@@ -1,0 +1,104 @@
+﻿@model LordMyCastle.Models.StatsDuo
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>StatsDuo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NomFormation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomFormation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AttaqueTypeTroupe1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AttaqueTypeTroupe1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DefenseTypeTroupe1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DefenseTypeTroupe1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PvMaxTypeTroupe1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PvMaxTypeTroupe1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AttaqueTypeTroupe2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AttaqueTypeTroupe2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DefenseTypeTroupe2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DefenseTypeTroupe2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PvMaxTypeTroupe2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PvMaxTypeTroupe2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AttaqueArmee)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AttaqueArmee)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DefenseArmee)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DefenseArmee)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PvMaxArmee)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PvMaxArmee)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

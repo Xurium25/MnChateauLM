@@ -1,0 +1,99 @@
+﻿@model IEnumerable<LordMyCastle.Models.StatsMixte>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.AttaqueInf)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DefenseInf)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PvMaxInf)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AttaqueArcher)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DefenseArcher)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PvMaxArcher)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AttaqueCava)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DefenseCava)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PvMaxCava)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AttaqueArmee)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DefenseArmee)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PvMaxArmee)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.AttaqueInf)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DefenseInf)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PvMaxInf)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AttaqueArcher)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DefenseArcher)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PvMaxArcher)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AttaqueCava)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DefenseCava)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PvMaxCava)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AttaqueArmee)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DefenseArmee)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PvMaxArmee)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>
